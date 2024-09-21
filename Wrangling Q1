@@ -1,0 +1,32 @@
+1. The paper is about tidy datasets, which is making cleaner data for easier analysis.
+
+2. The tidy data standard makes it so that data is organized using the same standard every time, and so we don't have to "reinvent the wheel". It makes the output from one tool
+into the input of another tool easier.
+
+3. "Like families, tidy datasets are all alike but every messy dataset is messy in its own way" means that tidy datasets can all be linked together because of their structure being tied
+to their meaning. 
+  "For a given dataset, it’s usually easy to figure out what are observations and what are variables, but it is surprisingly difficult to precisely define variables and observations 
+in general" means that it might be straightforward to see what an observation and what a variable is within a specific dataset, but it's more challenging to define them. What is 
+considered a variable in one situation might be seen as an observation in another.
+
+4. Values are either numbers (quantitative) or strings (qualitative). Values belong within variables and observations. A variable contains the values that measure attributes such as 
+height and duration, and observations contain all values measured on the same attributes. 
+
+5. Tidy data is a way to map a dataset's meaning to its structure, depending on how its rows, columns, and tables match up with observations, variables, and types. Each variable 
+forms a column, each observation forms a row, and each type of observational unit forms a table.
+
+6. 5 most commmon problems with messy datasets:
+  1. column headers are values, not variable names
+  2. multiple variables are stored in one column
+  3. variables are stored in both rows and columns
+  4. multiple types of observational units are stored in the same table
+  5. a single observational unit is stored in multiple tables
+Table 4 has variables that form both rows and columns, and the column headers are values instead of variable names.
+To melt a dataset is to "stack it" by collapsing columns of data into a single column, making the data longer instead of wider.
+
+7. Table 11 is messy because it has every day as a column header with many missing values. Table 12 is considered tidy and "molten" because it follows the principles of tidy data. Each 
+variable forms a column, each observation forms a row, and each type of observational unit forms a table. 
+
+8. The "chicken and egg" problem with data is that tidy data is only as useful as tidy tools, since they are linked together, and it would be hard to break out of this because
+independently changing data structures or tools would not improve the workflow. Wickham hopes to make new formulations of tidy data to deal with data in more ways, and making frameworks
+to make it more easier. 
